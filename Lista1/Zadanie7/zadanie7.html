@@ -1,0 +1,47 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Formularz zgloszenia serwisowego</title>
+</head>
+<body>
+	<form action="mailto:kamykbb@gmail.com" method="post">
+	<p>Imie:</p>
+	<input type="text" name="firstname"  maxlength="30" size="25"/>
+	
+	<p>Nazwisko:</p>
+	<input type="text" name="lastname" maxlength="30" size="25"/>
+	
+	<p>Opis problemu:</p>
+	<textarea id="txt" rows="20" cols="80">
+Prosze wpisac, tresc zglaszanego problemu z podanym wczesniej modelem telefonu.
+Pozdrawiam
+XYZ
+	</textarea>
+
+	<p>Marka:</p>
+	<select id="marka" name="marka">
+	<option value="0">Microsoft</option>
+	<option value="1">Sony</option>
+	<option value="2">Samsung</option>
+	<option value="3">HTC</option>
+	<option value="4">Huawei</option>
+	<option value="5">Lenovo</option>
+	</select>
+
+	<p>Dolaczone akcesoria:</p>
+	<input name="c1" type="checkbox" checked="checked" value="0" /> Orginalne opakowanie
+	<input name="c2" type="checkbox"  value="1" /> Ladowarka/Zasilacz
+	<input name="c3" type="checkbox"  value="2" /> Zdjecia
+	
+	<p>Wysylka:</p>
+	<input type="radio" checked="checked" name="sex" value="m"/> Kurier XYZ
+	<input type="radio" name="sex" value="k"/> Poczta Polska
+	<br/>
+	<input type="submit" value="Wyslij" />
+
+	</form>
+
+</body>
+</html>

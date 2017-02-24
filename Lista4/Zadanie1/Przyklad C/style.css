@@ -1,0 +1,56 @@
+.container {
+    	display: flex; 
+	flex-direction: column; 
+	background-color: #F2F2F2; 	
+}
+
+.container > header {
+	display: flex;
+	flex-direction: row;
+    	order: 0;  
+	flex: 2 1 auto; 
+}
+
+		.container > header nav.logo {
+    			order: 0; 
+    			align-self: stretch;  
+			background-color: #B3B3FF;
+			flex: 0 1 auto;	
+   		 }
+		.container > header nav.banner {
+    			order: 1; 
+    			align-self: stretch;  
+			background-color: #6666FF;
+			flex: 2 1 auto;		
+    		}
+
+.container > .main  {
+	display: flex;
+	flex-direction: row;
+    	order: 1;
+    	flex: 3 1 auto;
+}
+
+		.container > .main nav.menu {
+    			order: 1;
+    			flex: 1 1 auto;
+    			align-self: stretch;
+			background-color: #FFCCCC;	
+		}
+
+		.container > .main main {
+    			order: 0;
+    			flex: 3 1 auto;
+    			align-self: stretch;
+		}
+
+.container > footer  {
+   	order: 2;
+	flex-grow: 0;
+    	flex: 1 1 auto;
+    	align-self: stretch;
+	background-color: #99FF99;	
+}
+
+
+

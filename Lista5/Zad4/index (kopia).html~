@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<meta charset="UTF-8" />
+    	<title>Simple Form</title>
+    	<script type="text/javascript">
+	function f(x){
+				  alert('Dane wyslane');
+		//document.getElementById('content').innerHTML+=<div id="picture">jea</div>;
+		document.getElementById('picture').style.backgroundColor=x;
+		document.getElementById('picture').style.width="100px";
+		document.getElementById('picture').style.height="100px";
+		document.getElementById('sidebar').innerHTML+=x;
+	}
+	</script>
+</head>
+<body>
+	<div id="menu">
+		<a href="#" onclick="f('red')">tekst1</a>
+		<a href="#" onclick="f('blue')">tekst2</a>
+		<a href="#" onclick="f('brown')">tekst3</a>
+	<div id="content">
+		<div id="picture">jea</div>	
+	</div>
+	<div id="sidebar"></div>
+</body>
+</html>

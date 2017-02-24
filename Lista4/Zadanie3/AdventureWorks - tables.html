@@ -1,0 +1,2361 @@
+
+<!-- saved from url=(0105)http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/allTables.htm -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><head xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+    <link rel="stylesheet" href="./AdventureWorks - tables_files/sqlspec.css">
+    <title>AdventureWorks - tables</title>
+    <script language="JavaScript" src="./AdventureWorks - tables_files/resort_table.js">
+    </script>
+    <script language="javascript">
+//
+// this hides the SVG if you are on IE, 
+// and hides the VML if you are NOT on IE.
+//
+function init()
+{
+  var node = null;
+  var isIE = navigator.userAgent.indexOf("MSIE") != -1;
+
+  showhideIfIE('FK_SVG', isIE, true);
+  showhideIfIE('DEPENDENCY_SVG', isIE, true);
+  showhideIfIE('MODEL_SVG', isIE, true); 
+  showhideIfIE('FK_VML', isIE, false);
+  showhideIfIE('DEPENDENCY_VML', isIE, false);
+  showhideIfIE('MODEL_VML', isIE, false);
+}   
+
+function showhideIfIE(elementName, isIE, hide)
+{
+  node = document.getElementById(elementName);
+  if (node != null) 
+  {
+    if (hide) 
+      node.style.display = isIE ? 'none' : 'block';
+    else
+      node.style.display = isIE ? 'block' : 'none';
+  }
+}
+      </script>
+  <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+  <body onload="init()">
+    <div id="nsbanner" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0" id="Table1">
+          <tbody><tr id="hdr">
+            <td class="runninghead">Database reference - AdventureWorks</td>
+            <td class="product">
+          </td></tr>
+        </tbody></table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">
+          <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/default.htm">AdventureWorks</a>&nbsp;-&nbsp;        
+                    tables</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <h2 class="dtH2">Table overview</h2>
+      <table class="dtTABLE">
+        <thead>
+          <tr valign="top">
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)">name</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="date100">created</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="date100">modified</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">columns</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">rows</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">indexes</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">triggers</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">constraints</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">refers to</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">refers from</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">dependents</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">row size</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">data</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">indexes</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)">comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_dboAWBuildVersion.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">AWBuildVersion</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">1</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">117&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">8&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Current version number of the AdventureWorks sample database. &nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_dboDatabaseLog.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">DatabaseLog</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">8</td>
+            <td align="right">1,566</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">4,294,968,329&nbsp;b</td>
+            <td align="right">6,232&nbsp;kb</td>
+            <td align="right">48&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Audit table tracking all DDL changes made to the AdventureWorks database. Data is captured by the database trigger ddlDatabaseTriggerLog.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_dboErrorLog.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ErrorLog</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">9</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">16,788&nbsp;b</td>
+            <td align="right">0&nbsp;kb</td>
+            <td align="right">
+                                0&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Audit table tracking errors in the the AdventureWorks database that are caught by the CATCH block of a TRY...CATCH construct. Data is inserted by stored procedure dbo.uspLogError when it is executed from inside the CATCH block of a TRY...CATCH construct.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesDepartment.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Department</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">16</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">4</td>
+            <td align="right">410&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Lookup table containing the departments within the Adventure Works Cycles company.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesEmployee.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Employee</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">16</td>
+            <td align="right">290</td>
+            <td align="right">5</td>
+            <td align="right">1</td>
+            <td align="right">9</td>
+            <td align="right">2</td>
+            <td align="right">6</td>
+            <td align="right">23</td>
+            <td align="right">1,348&nbsp;b</td>
+            <td align="right">56&nbsp;kb</td>
+            <td align="right">120&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Employee information such as salary, department, and title.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesEmployeeAddress.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">EmployeeAddress</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">290</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">32&nbsp;b</td>
+            <td align="right">16&nbsp;kb</td>
+            <td align="right">32&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping employees to their address(es).&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesEmployeeDepartmentHistory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">EmployeeDepartmentHistory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">6</td>
+            <td align="right">296</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">8</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">6</td>
+            <td align="right">31&nbsp;b</td>
+            <td align="right">16&nbsp;kb</td>
+            <td align="right">48&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Employee department transfers.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesEmployeePayHistory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">EmployeePayHistory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">5</td>
+            <td align="right">316</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">29&nbsp;b</td>
+            <td align="right">16&nbsp;kb</td>
+            <td align="right">16&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Employee pay history.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesJobCandidate.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">JobCandidate</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">13</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">2,147,483,662&nbsp;b</td>
+            <td align="right">128&nbsp;kb</td>
+            <td align="right">32&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Résumés submitted to Human Resources by job applicants.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesShift.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Shift</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">5</td>
+            <td align="right">3</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">4</td>
+            <td align="right">225&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">40&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Work shift lookup table.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonAddress.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Address</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">8</td>
+            <td align="right">19,614</td>
+            <td align="right">4</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">1</td>
+            <td align="right">5</td>
+            <td align="right">9</td>
+            <td align="right">692&nbsp;b</td>
+            <td align="right">2,240&nbsp;kb</td>
+            <td align="right">2,504&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Street address information for customers, employees, and vendors.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonAddressType.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">AddressType</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">6</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">5</td>
+            <td align="right">228&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">40&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Types of addresses stored in the Address table. &nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonContact.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Contact</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">15</td>
+            <td align="right">19,972</td>
+            <td align="right">4</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">6</td>
+            <td align="right">17</td>
+            <td align="right">2,147,484,788&nbsp;b</td>
+            <td align="right">4,576&nbsp;kb</td>
+            <td align="right">1,960&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Names of each employee, customer contact, and vendor contact.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonContactType.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ContactType</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">20</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">5</td>
+            <td align="right">212&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Lookup table containing the types of contacts stored in Contact.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonCountryRegion.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">CountryRegion</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">238</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">8</td>
+            <td align="right">220&nbsp;b</td>
+            <td align="right">16&nbsp;kb</td>
+            <td align="right">32&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Lookup table containing the ISO standard codes for countries and regions.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonStateProvince.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">StateProvince</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">8</td>
+            <td align="right">181</td>
+            <td align="right">4</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">2</td>
+            <td align="right">2</td>
+            <td align="right">10</td>
+            <td align="right">256&nbsp;b</td>
+            <td align="right">16&nbsp;kb</td>
+            <td align="right">64&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>State and province lookup table.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionBillOfMaterials.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">BillOfMaterials</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">9</td>
+            <td align="right">2,679</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">8</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">9</td>
+            <td align="right">55&nbsp;b</td>
+            <td align="right">160&nbsp;kb</td>
+            <td align="right">200&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Items required to make bicycles and bicycle subassemblies. It identifies the heirarchical relationship between a parent product and its components.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionCulture.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Culture</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">8</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">2</td>
+            <td align="right">232&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Lookup table containing the languages in which some AdventureWorks data is stored.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionDocument.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Document</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">10</td>
+            <td align="right">9</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">3</td>
+            <td align="right">4,294,969,163&nbsp;b</td>
+            <td align="right">344&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Product maintenance documents.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionIllustration.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Illustration</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">5</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">1</td>
+            <td align="right">2,147,483,658&nbsp;b</td>
+            <td align="right">184&nbsp;kb</td>
+            <td align="right">8&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Bicycle assembly diagrams.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionLocation.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Location</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">5</td>
+            <td align="right">14</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">4</td>
+            <td align="right">219&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Product inventory and manufacturing locations.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProduct.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Product</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">25</td>
+            <td align="right">504</td>
+            <td align="right">4</td>
+            <td align="right">0</td>
+            <td align="right">15</td>
+            <td align="right">4</td>
+            <td align="right">14</td>
+            <td align="right">20</td>
+            <td align="right">517&nbsp;b</td>
+            <td align="right">104&nbsp;kb</td>
+            <td align="right">120&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Products sold or used in the manfacturing of sold products.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductCategory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductCategory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">4</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">3</td>
+            <td align="right">228&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">40&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>High-level product categorization.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductCostHistory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductCostHistory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">5</td>
+            <td align="right">395</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">36&nbsp;b</td>
+            <td align="right">24&nbsp;kb</td>
+            <td align="right">16&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Changes in the cost of a product over time.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductDescription.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductDescription</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">762</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">3</td>
+            <td align="right">1,628&nbsp;b</td>
+            <td align="right">144&nbsp;kb</td>
+            <td align="right">56&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Product descriptions in several languages.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductDocument.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductDocument</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">32</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">16&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">8&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping products to related product documents.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductInventory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductInventory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">7</td>
+            <td align="right">1,069</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">6</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">73&nbsp;b</td>
+            <td align="right">56&nbsp;kb</td>
+            <td align="right">16&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Product inventory information.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductListPriceHistory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductListPriceHistory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">5</td>
+            <td align="right">395</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">36&nbsp;b</td>
+            <td align="right">24&nbsp;kb</td>
+            <td align="right">16&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Changes in the list price of a product over time.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductModel.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductModel</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">6</td>
+            <td align="right">128</td>
+            <td align="right">5</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">8</td>
+            <td align="right">4,294,967,520&nbsp;b</td>
+            <td align="right">144&nbsp;kb</td>
+            <td align="right">48&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Product model classification.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductModelIllustration.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductModelIllustration</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">7</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">16&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">8&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping product models and illustrations.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductModelProductDescriptionCulture.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductModelProductDescriptionCulture</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">762</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">6</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">40&nbsp;b</td>
+            <td align="right">32&nbsp;kb</td>
+            <td align="right">16&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping product descriptions and the language the description is written in.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductPhoto.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductPhoto</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">6</td>
+            <td align="right">101</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">1</td>
+            <td align="right">4,294,967,706&nbsp;b</td>
+            <td align="right">2,240&nbsp;kb</td>
+            <td align="right">16&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Product images.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductProductPhoto.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductProductPhoto</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">504</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">16&nbsp;b</td>
+            <td align="right">16&nbsp;kb</td>
+            <td align="right">40&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping products and product photos.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductReview.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductReview</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">8</td>
+            <td align="right">4</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">15,828&nbsp;b</td>
+            <td align="right">16&nbsp;kb</td>
+            <td align="right">56&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Customer reviews of products they have purchased.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductSubcategory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductSubcategory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">5</td>
+            <td align="right">37</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">1</td>
+            <td align="right">1</td>
+            <td align="right">3</td>
+            <td align="right">232&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">40&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Product subcategories. See ProductCategory table.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionScrapReason.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ScrapReason</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">16</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">2</td>
+            <td align="right">210&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Manufacturing failure reasons lookup table.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">TransactionHistory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">9</td>
+            <td align="right">113,443</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">9</td>
+            <td align="right">48&nbsp;b</td>
+            <td align="right">6,304&nbsp;kb</td>
+            <td align="right">3,192&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Record of each purchase order, sales order, or work order transaction year to date.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistoryArchive.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">TransactionHistoryArchive</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">9</td>
+            <td align="right">89,253</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">48&nbsp;b</td>
+            <td align="right">4,960&nbsp;kb</td>
+            <td align="right">2,568&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Transactions for previous years.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionUnitMeasure.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">UnitMeasure</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">38</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">2</td>
+            <td align="right">220&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Unit of measure lookup table.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrder.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">WorkOrder</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">10</td>
+            <td align="right">72,591</td>
+            <td align="right">3</td>
+            <td align="right">2</td>
+            <td align="right">6</td>
+            <td align="right">2</td>
+            <td align="right">1</td>
+            <td align="right">8</td>
+            <td align="right">52&nbsp;b</td>
+            <td align="right">4,192&nbsp;kb</td>
+            <td align="right">1,832&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Manufacturing work orders.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrderRouting.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">WorkOrderRouting</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">12</td>
+            <td align="right">67,131</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">10</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">7</td>
+            <td align="right">73&nbsp;b</td>
+            <td align="right">5,552&nbsp;kb</td>
+            <td align="right">1,040&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Work order details.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingProductVendor.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ProductVendor</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">11</td>
+            <td align="right">460</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">11</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">9</td>
+            <td align="right">68&nbsp;b</td>
+            <td align="right">40&nbsp;kb</td>
+            <td align="right">48&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping vendors with the products they supply.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingPurchaseOrderDetail.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">PurchaseOrderDetail</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">11</td>
+            <td align="right">8,845</td>
+            <td align="right">2</td>
+            <td align="right">2</td>
+            <td align="right">8</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">8</td>
+            <td align="right">61&nbsp;b</td>
+            <td align="right">512&nbsp;kb</td>
+            <td align="right">168&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Individual products associated with a specific purchase order. See PurchaseOrderHeader.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingPurchaseOrderHeader.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">PurchaseOrderHeader</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">13</td>
+            <td align="right">4,012</td>
+            <td align="right">3</td>
+            <td align="right">1</td>
+            <td align="right">9</td>
+            <td align="right">3</td>
+            <td align="right">1</td>
+            <td align="right">11</td>
+            <td align="right">74&nbsp;b</td>
+            <td align="right">336&nbsp;kb</td>
+            <td align="right">144&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>General purchase order information. See PurchaseOrderDetail.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingShipMethod.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ShipMethod</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">6</td>
+            <td align="right">5</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">5</td>
+            <td align="right">244&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">40&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Shipping company lookup table.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingVendor.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Vendor</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">8</td>
+            <td align="right">104</td>
+            <td align="right">2</td>
+            <td align="right">1</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">5</td>
+            <td align="right">4,369&nbsp;b</td>
+            <td align="right">16&nbsp;kb</td>
+            <td align="right">32&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Companies from whom Adventure Works Cycles purchases parts or other goods.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingVendorAddress.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">VendorAddress</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">104</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">20&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference mapping vendors and addresses.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingVendorContact.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">VendorContact</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">156</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">20&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">40&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping vendors and their employees.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesContactCreditCard.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ContactCreditCard</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">19,118</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">16&nbsp;b</td>
+            <td align="right">480&nbsp;kb</td>
+            <td align="right">16&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping customers in the Contact table to their credit card information in the CreditCard table. &nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCountryRegionCurrency.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">CountryRegionCurrency</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">109</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">32&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping ISO currency codes to a country or region.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCreditCard.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">CreditCard</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">6</td>
+            <td align="right">19,118</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">2</td>
+            <td align="right">2</td>
+            <td align="right">315&nbsp;b</td>
+            <td align="right">1,496&nbsp;kb</td>
+            <td align="right">776&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Customer credit card information.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCurrency.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Currency</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">105</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">2</td>
+            <td align="right">220&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Lookup table containing standard ISO currencies.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCurrencyRate.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">CurrencyRate</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">7</td>
+            <td align="right">13,532</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">2</td>
+            <td align="right">1</td>
+            <td align="right">2</td>
+            <td align="right">60&nbsp;b</td>
+            <td align="right">768&nbsp;kb</td>
+            <td align="right">400&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Currency exchange rates.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomer.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Customer</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">6</td>
+            <td align="right">19,185</td>
+            <td align="right">4</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">1</td>
+            <td align="right">4</td>
+            <td align="right">7</td>
+            <td align="right">46&nbsp;b</td>
+            <td align="right">824&nbsp;kb</td>
+            <td align="right">1,176&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Current customer information. Also see the Individual and Store tables.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomerAddress.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">CustomerAddress</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">5</td>
+            <td align="right">19,220</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">36&nbsp;b</td>
+            <td align="right">864&nbsp;kb</td>
+            <td align="right">552&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping customers to their address(es).&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesIndividual.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Individual</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">18,484</td>
+            <td align="right">5</td>
+            <td align="right">1</td>
+            <td align="right">3</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">11</td>
+            <td align="right">2,147,483,662&nbsp;b</td>
+            <td align="right">24,680&nbsp;kb</td>
+            <td align="right">144&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Demographic data about customers that purchase Adventure Works products online.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderDetail.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SalesOrderDetail</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">11</td>
+            <td align="right">121,317</td>
+            <td align="right">3</td>
+            <td align="right">1</td>
+            <td align="right">8</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">7</td>
+            <td align="right">175&nbsp;b</td>
+            <td align="right">9,880&nbsp;kb</td>
+            <td align="right">5,312&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Individual products associated with a specific sales order. See SalesOrderHeader.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeader.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SalesOrderHeader</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">27</td>
+            <td align="right">31,465</td>
+            <td align="right">5</td>
+            <td align="right">1</td>
+            <td align="right">16</td>
+            <td align="right">9</td>
+            <td align="right">2</td>
+            <td align="right">14</td>
+            <td align="right">909&nbsp;b</td>
+            <td align="right">5,616&nbsp;kb</td>
+            <td align="right">2,432&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>General sales order information.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeaderSalesReason.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SalesOrderHeaderSalesReason</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">3</td>
+            <td align="right">27,647</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">16&nbsp;b</td>
+            <td align="right">688&nbsp;kb</td>
+            <td align="right">16&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping sales orders to sales reason codes.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesPerson.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SalesPerson</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">9</td>
+            <td align="right">17</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">8</td>
+            <td align="right">2</td>
+            <td align="right">4</td>
+            <td align="right">10</td>
+            <td align="right">68&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Sales representative current information.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesPersonQuotaHistory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SalesPersonQuotaHistory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">5</td>
+            <td align="right">163</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">44&nbsp;b</td>
+            <td align="right">16&nbsp;kb</td>
+            <td align="right">32&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Sales performance tracking.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesReason.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SalesReason</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">10</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">1</td>
+            <td align="right">412&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">8&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Lookup table of customer purchase reasons.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesTaxRate.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SalesTaxRate</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">7</td>
+            <td align="right">29</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">237&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">40&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Tax rate lookup table.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesTerritory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SalesTerritory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">10</td>
+            <td align="right">10</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">10</td>
+            <td align="right">472&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">40&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Sales territory lookup table.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesTerritoryHistory.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SalesTerritoryHistory</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">6</td>
+            <td align="right">17</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">6</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">48&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Sales representative transfers to other sales territories.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesShoppingCartItem.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">ShoppingCartItem</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">6</td>
+            <td align="right">3</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">1</td>
+            <td align="right">0</td>
+            <td align="right">3</td>
+            <td align="right">228&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Contains online customer orders until the order is submitted or cancelled.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSpecialOffer.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SpecialOffer</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">11</td>
+            <td align="right">16</td>
+            <td align="right">2</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">6</td>
+            <td align="right">1,476&nbsp;b</td>
+            <td align="right">8&nbsp;kb</td>
+            <td align="right">24&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Sale discounts lookup table.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSpecialOfferProduct.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">SpecialOfferProduct</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">4</td>
+            <td align="right">538</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">4</td>
+            <td align="right">2</td>
+            <td align="right">2</td>
+            <td align="right">3</td>
+            <td align="right">32&nbsp;b</td>
+            <td align="right">24&nbsp;kb</td>
+            <td align="right">64&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping products to special offer discounts.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesStore.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Store</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">6</td>
+            <td align="right">701</td>
+            <td align="right">4</td>
+            <td align="right">1</td>
+            <td align="right">3</td>
+            <td align="right">2</td>
+            <td align="right">1</td>
+            <td align="right">7</td>
+            <td align="right">2,147,483,878&nbsp;b</td>
+            <td align="right">808&nbsp;kb</td>
+            <td align="right">80&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Customers (resellers) of Adventure Works products.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesStoreContact.htm" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">StoreContact</a>
+            </td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td>Mar 19 2009  9:08PM</td>
+            <td align="right">5</td>
+            <td align="right">753</td>
+            <td align="right">4</td>
+            <td align="right">0</td>
+            <td align="right">5</td>
+            <td align="right">3</td>
+            <td align="right">0</td>
+            <td align="right">6</td>
+            <td align="right">36&nbsp;b</td>
+            <td align="right">40&nbsp;kb</td>
+            <td align="right">120&nbsp;kb</td>
+            <td>
+              <span class="desc">
+                <span>Cross-reference table mapping stores and their employees.&nbsp;
+  </span>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="dtH2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Tables referenced by views, procedures, or functions</h2>
+      <table class="dtTABLE" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <thead>
+          <tr valign="top">
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)">name</th>
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)" sorttype="number">references</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_dboErrorLog.htm">ErrorLog</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesDepartment.htm">Department</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesEmployee.htm">Employee</a>
+            </td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesEmployeeAddress.htm">EmployeeAddress</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesEmployeeDepartmentHistory.htm">EmployeeDepartmentHistory</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesEmployeePayHistory.htm">EmployeePayHistory</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesJobCandidate.htm">JobCandidate</a>
+            </td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_HumanResourcesShift.htm">Shift</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonAddress.htm">Address</a>
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonAddressType.htm">AddressType</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonContact.htm">Contact</a>
+            </td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonContactType.htm">ContactType</a>
+            </td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonCountryRegion.htm">CountryRegion</a>
+            </td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonStateProvince.htm">StateProvince</a>
+            </td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionBillOfMaterials.htm">BillOfMaterials</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProduct.htm">Product</a>
+            </td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductCostHistory.htm">ProductCostHistory</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductDescription.htm">ProductDescription</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductInventory.htm">ProductInventory</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductListPriceHistory.htm">ProductListPriceHistory</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductModel.htm">ProductModel</a>
+            </td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductModelProductDescriptionCulture.htm">ProductModelProductDescriptionCulture</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingVendor.htm">Vendor</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingVendorAddress.htm">VendorAddress</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingVendorContact.htm">VendorContact</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomer.htm">Customer</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomerAddress.htm">CustomerAddress</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesIndividual.htm">Individual</a>
+            </td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeader.htm">SalesOrderHeader</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesPerson.htm">SalesPerson</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesTerritory.htm">SalesTerritory</a>
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesStore.htm">Store</a>
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesStoreContact.htm">StoreContact</a>
+            </td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="dtH2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">Tables not referenced by views, procedures, or functions</h2>
+      <table class="dtTABLE" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <thead>
+          <tr valign="top">
+            <th style="cursor:pointer;cursor:hand;" onclick="resortColumn(this)">name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_dboAWBuildVersion.htm">AWBuildVersion</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_dboDatabaseLog.htm">DatabaseLog</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionCulture.htm">Culture</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionDocument.htm">Document</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionIllustration.htm">Illustration</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionLocation.htm">Location</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductCategory.htm">ProductCategory</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductDocument.htm">ProductDocument</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductModelIllustration.htm">ProductModelIllustration</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductPhoto.htm">ProductPhoto</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductProductPhoto.htm">ProductProductPhoto</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductReview.htm">ProductReview</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductSubcategory.htm">ProductSubcategory</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionScrapReason.htm">ScrapReason</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistory.htm">TransactionHistory</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistoryArchive.htm">TransactionHistoryArchive</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionUnitMeasure.htm">UnitMeasure</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrder.htm">WorkOrder</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrderRouting.htm">WorkOrderRouting</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingProductVendor.htm">ProductVendor</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingPurchaseOrderDetail.htm">PurchaseOrderDetail</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingPurchaseOrderHeader.htm">PurchaseOrderHeader</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingShipMethod.htm">ShipMethod</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesContactCreditCard.htm">ContactCreditCard</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCountryRegionCurrency.htm">CountryRegionCurrency</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCreditCard.htm">CreditCard</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCurrency.htm">Currency</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCurrencyRate.htm">CurrencyRate</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderDetail.htm">SalesOrderDetail</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeaderSalesReason.htm">SalesOrderHeaderSalesReason</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesPersonQuotaHistory.htm">SalesPersonQuotaHistory</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesReason.htm">SalesReason</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesTaxRate.htm">SalesTaxRate</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesTerritoryHistory.htm">SalesTerritoryHistory</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesShoppingCartItem.htm">ShoppingCartItem</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSpecialOffer.htm">SpecialOffer</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSpecialOfferProduct.htm">SpecialOfferProduct</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <center>
+        <img border="0" src="./AdventureWorks - tables_files/tablesizes.png" usemap="#Largesttablesbysizeondisk" alt="Largest tables by size on disk">
+        <img border="0" src="./AdventureWorks - tables_files/tablerows.png" usemap="#Largesttablesbyrowcount" alt="Largest tables by row count">
+        <img border="0" src="./AdventureWorks - tables_files/indexsizes.png" usemap="#Largestindexesbysizeondisk" alt="Largest indexes by size on disk">
+      </center>
+    </div>
+    <br xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <center xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <span style="size:20pt">Powered by <a target="_blank" href="http://www.elsasoft.org/">Yoyodyne © 1971</a></span>
+    </center>
+    <map name="Largesttablesbysizeondisk">
+      <area title="[Sales].[Individual] (29%)" shape="rect" coords="725,461,876,476" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesIndividual.htm">
+      <area title="[Sales].[Individual] (29%)" shape="poly" coords="600,300,725,300,724,302,724,304,724,306,724,308,724,310,724,313,724,315,723,317,723,319,723,321,722,323,722,325,721,328,721,330,720,332,720,334,719,336,718,338,718,340,717,342,716,344,715,346,715,348,714,350,713,352,712,354,711,356,710,358,709,360,708,362,707,364,706,366,704,368,703,369,702,371,701,373,699,375,698,376,697,378,695,380,694,382,692,383,691,385,689,386,688,388,686,389,685,391,683,392,682,394,680,395,678,397,676,398,675,399,673,401,671,402,669,403,668,404,666,406,664,407,662,408,660,409,658,410,656,411,654,412,652,413,650,414,648,415,646,415,644,416,642,417,640,418,638,418,636,419,634,420,632,420,630,421,628,421,625,422,623,422,621,423,619,423,617,423,615,424,613,424,610,424,608,424,606,424,604,424,602,424,600,425,597,424,595,424,593,424,591,424,589,424,586,424,584,424,582,423,580,423,578,423,576,422,574,422,571,421,569,421,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesIndividual.htm">
+      <area title="[Sales].[SalesOrderDetail] (11%)" shape="rect" coords="290,469,479,483" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderDetail.htm">
+      <area title="[Sales].[SalesOrderDetail] (11%)" shape="poly" coords="600,300,568,421,566,420,564,419,562,419,560,418,558,417,556,417,554,416,552,415,550,414,548,413,546,412,544,411,542,410,540,409,538,408,536,407,534,406,533,405,531,404,529,403,527,401,525,400,524,399,522,397,520,396,518,395,517,393,515,392,514,390,512,389,510,387,509,386,507,384,506,382,505,381,503,379,502,377,500,376,499,374,498,372,497,370,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderDetail.htm">
+      <area title="[Production].[TransactionHistory] (7%)" shape="rect" coords="209,362,431,377" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistory.htm">
+      <area title="[Production].[TransactionHistory] (7%)" shape="poly" coords="600,300,496,369,494,367,493,365,492,363,491,362,490,360,489,358,488,356,487,354,486,352,485,350,484,348,483,346,483,344,482,342,481,340,480,338,480,336,479,334,479,331,478,329,478,327,477,325,477,323,476,321,476,319,476,316,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistory.htm">
+      <area title="[dbo].[DatabaseLog] (7%)" shape="rect" coords="273,271,425,285" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_dboDatabaseLog.htm">
+      <area title="[dbo].[DatabaseLog] (7%)" shape="poly" coords="600,300,475,315,475,313,475,311,475,308,475,306,475,304,475,302,475,300,475,298,475,295,475,293,475,291,475,289,475,287,475,285,476,282,476,280,476,278,477,276,477,274,478,272,478,270,479,267,479,265,480,263,481,261,481,259,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_dboDatabaseLog.htm">
+      <area title="[Sales].[SalesOrderHeader] (6%)" shape="rect" coords="251,194,441,208" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeader.htm">
+      <area title="[Sales].[SalesOrderHeader] (6%)" shape="poly" coords="600,300,481,258,482,256,483,254,484,252,485,250,486,248,486,246,487,244,488,242,489,240,490,238,492,237,493,235,494,233,495,231,496,229,497,227,499,226,500,224,501,222,503,220,504,219,506,217,507,215,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeader.htm">
+      <area title="[Production].[WorkOrderRouting] (6%)" shape="rect" coords="258,120,480,134" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrderRouting.htm">
+      <area title="[Production].[WorkOrderRouting] (6%)" shape="poly" coords="600,300,508,214,510,213,511,211,513,210,514,208,516,207,517,205,519,204,521,202,523,201,524,200,526,198,528,197,530,196,531,195,533,193,535,192,537,191,539,190,541,189,543,188,545,187,547,186,549,185,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrderRouting.htm">
+      <area title="[Production].[TransactionHistoryArchive] (5%)" shape="rect" coords="283,56,545,70" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistoryArchive.htm">
+      <area title="[Production].[TransactionHistoryArchive] (5%)" shape="poly" coords="600,300,550,185,552,184,554,183,556,182,558,182,560,181,562,180,564,180,566,179,568,178,570,178,572,177,575,177,577,177,579,176,581,176,583,176,585,175,587,175,590,175,592,175,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistoryArchive.htm">
+      <area title="[Person].[Contact] (5%)" shape="rect" coords="631,41,770,55" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonContact.htm">
+      <area title="[Person].[Contact] (5%)" shape="poly" coords="600,300,594,175,596,175,598,175,601,175,603,175,605,175,607,175,609,175,611,175,614,175,616,176,618,176,620,176,622,177,624,177,626,177,629,178,631,178,633,179,635,180,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonContact.htm">
+      <area title="[Production].[WorkOrder] (4%)" shape="rect" coords="695,91,874,105" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrder.htm">
+      <area title="[Production].[WorkOrder] (4%)" shape="poly" coords="600,300,636,180,638,181,640,181,642,182,644,183,646,183,648,184,650,185,652,186,654,187,656,188,658,189,660,190,662,191,664,192,665,193,667,194,669,196,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrder.htm">
+      <area title="[Person].[Address] (2%)" shape="rect" coords="728,132,869,147" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonAddress.htm">
+      <area title="[Person].[Address] (2%)" shape="poly" coords="600,300,670,197,672,198,674,199,676,200,677,202,679,203,681,205,682,206,684,207,686,209,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonAddress.htm">
+      <area title="[Production].[ProductPhoto] (2%)" shape="rect" coords="745,162,937,176" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductPhoto.htm">
+      <area title="[Production].[ProductPhoto] (2%)" shape="poly" coords="600,300,686,210,688,211,689,213,691,214,692,216,694,218,695,219,697,221,698,223,699,224,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionProductPhoto.htm">
+      <area title="[Sales].[CreditCard] (1%)" shape="rect" coords="756,187,904,201" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCreditCard.htm">
+      <area title="[Sales].[CreditCard] (1%)" shape="poly" coords="600,300,700,225,701,227,703,229,704,231,705,232,706,234,707,236,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCreditCard.htm">
+      <area title="[Sales].[CustomerAddress] (1%)" shape="rect" coords="761,202,948,217" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomerAddress.htm">
+      <area title="[Sales].[CustomerAddress] (1%)" shape="poly" coords="600,300,708,237,709,239,710,241,711,242,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomerAddress.htm">
+    </map>
+    <map name="Largestindexesbysizeondisk">
+      <area title="[Sales].[SalesOrderDetail] (20%)" shape="rect" coords="752,412,941,426" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderDetail.htm">
+      <area title="[Sales].[SalesOrderDetail] (20%)" shape="poly" coords="600,300,725,300,724,302,724,304,724,306,724,308,724,310,724,313,724,315,723,317,723,319,723,321,722,323,722,325,721,328,721,330,720,332,720,334,719,336,718,338,718,340,717,342,716,344,715,346,715,348,714,350,713,352,712,354,711,356,710,358,709,360,708,362,707,364,706,366,704,368,703,369,702,371,701,373,699,375,698,376,697,378,695,380,694,382,692,383,691,385,689,386,688,388,686,389,685,391,683,392,682,394,680,395,678,397,676,398,675,399,673,401,671,402,669,403,668,404,666,406,664,407,662,408,660,409,658,410,656,411,654,412,652,413,650,414,648,415,646,415,644,416,642,417,640,418,638,418,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderDetail.htm">
+      <area title="[Production].[TransactionHistory] (12%)" shape="rect" coords="350,554,579,568" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistory.htm">
+      <area title="[Production].[TransactionHistory] (12%)" shape="poly" coords="600,300,637,419,635,419,632,420,630,421,628,421,626,422,624,422,622,422,620,423,617,423,615,423,613,424,611,424,609,424,607,424,604,424,602,424,600,424,598,424,596,424,594,424,591,424,589,424,587,424,585,424,583,423,581,423,578,423,576,422,574,422,572,421,570,421,568,420,566,420,564,419,561,419,559,418,557,417,555,416,553,416,551,415,549,414,547,413,545,412,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistory.htm">
+      <area title="[Production].[TransactionHistoryArchive] (9%)" shape="rect" coords="199,442,462,456" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistoryArchive.htm">
+      <area title="[Production].[TransactionHistoryArchive] (9%)" shape="poly" coords="600,300,544,411,542,410,540,409,538,408,536,407,534,406,532,405,531,404,529,403,527,401,525,400,524,399,522,397,520,396,518,395,517,393,515,392,514,390,512,389,510,387,509,386,507,384,506,382,505,381,503,379,502,377,500,376,499,374,498,372,497,370,495,369,494,367,493,365,492,363,491,361,490,359,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistoryArchive.htm">
+      <area title="[Person].[Address] (9%)" shape="rect" coords="285,334,427,348" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonAddress.htm">
+      <area title="[Person].[Address] (9%)" shape="poly" coords="600,300,490,359,489,357,488,355,487,353,486,351,485,349,484,347,483,345,482,343,482,341,481,339,480,337,480,335,479,333,478,331,478,329,477,326,477,324,477,322,476,320,476,318,476,316,475,313,475,311,475,309,475,307,475,305,475,303,475,300,475,298,475,296,475,294,475,292,475,290,475,287,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonAddress.htm">
+      <area title="[Sales].[SalesOrderHeader] (9%)" shape="rect" coords="243,220,433,235" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeader.htm">
+      <area title="[Sales].[SalesOrderHeader] (9%)" shape="poly" coords="600,300,475,287,475,285,476,282,476,280,476,278,477,276,477,274,478,272,478,270,479,267,479,265,480,263,481,261,481,259,482,257,483,255,483,253,484,251,485,249,486,247,487,245,488,243,489,241,490,239,491,237,492,235,493,234,494,232,496,230,497,228,498,226,499,225,501,223,502,221,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeader.htm">
+      <area title="[Person].[Contact] (7%)" shape="rect" coords="335,126,475,141" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonContact.htm">
+      <area title="[Person].[Contact] (7%)" shape="poly" coords="600,300,503,221,504,219,505,217,507,216,508,214,510,212,511,211,513,209,514,208,516,206,518,205,519,204,521,202,523,201,525,199,526,198,528,197,530,196,532,194,534,193,535,192,537,191,539,190,541,189,543,188,545,187,547,186,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonContact.htm">
+      <area title="[Production].[WorkOrder] (6%)" shape="rect" coords="372,52,551,66" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrder.htm">
+      <area title="[Production].[WorkOrder] (6%)" shape="poly" coords="600,300,549,185,551,184,553,184,555,183,557,182,559,181,561,181,563,180,565,179,567,179,569,178,571,178,573,177,576,177,578,176,580,176,582,176,584,175,586,175,589,175,591,175,593,175,595,175,597,175,599,175,602,175,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrder.htm">
+      <area title="[Sales].[Customer] (4%)" shape="rect" coords="639,46,781,60" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomer.htm">
+      <area title="[Sales].[Customer] (4%)" shape="poly" coords="600,300,602,175,604,175,606,175,608,175,611,175,613,175,615,175,617,176,619,176,621,176,623,177,626,177,628,178,630,178,632,179,634,179,636,180,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomer.htm">
+      <area title="[Production].[WorkOrderRouting] (3%)" shape="rect" coords="691,87,912,101" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrderRouting.htm">
+      <area title="[Production].[WorkOrderRouting] (3%)" shape="poly" coords="600,300,636,180,638,181,641,181,643,182,645,183,647,184,649,185,651,185,653,186,655,187,657,188,659,189,660,190,662,191,664,193,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrderRouting.htm">
+      <area title="[Sales].[CreditCard] (2%)" shape="rect" coords="723,124,871,139" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCreditCard.htm">
+      <area title="[Sales].[CreditCard] (2%)" shape="poly" coords="600,300,665,193,666,194,668,195,670,196,672,198,674,199,675,200,677,202,679,203,681,204,682,206,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCreditCard.htm">
+      <area title="[Sales].[CustomerAddress] (2%)" shape="rect" coords="740,153,927,167" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomerAddress.htm">
+      <area title="[Sales].[CustomerAddress] (2%)" shape="poly" coords="600,300,683,207,685,208,686,210,688,211,689,213,691,214,692,216,694,218,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomerAddress.htm">
+      <area title="[Sales].[CurrencyRate] (1%)" shape="rect" coords="750,173,915,187" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCurrencyRate.htm">
+      <area title="[Sales].[CurrencyRate] (1%)" shape="poly" coords="600,300,695,218,696,220,697,222,699,224,700,225,701,227,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCurrencyRate.htm">
+    </map>
+    <map name="Largesttablesbyrowcount">
+      <area title="[Sales].[SalesOrderDetail] (17%)" shape="rect" coords="758,396,948,410" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderDetail.htm">
+      <area title="[Sales].[SalesOrderDetail] (17%)" shape="poly" coords="600,300,725,300,724,302,724,304,724,306,724,308,724,310,724,313,724,315,723,317,723,319,723,321,722,323,722,325,721,328,721,330,720,332,720,334,719,336,718,338,718,340,717,342,716,344,715,346,715,348,714,350,713,352,712,354,711,356,710,358,709,360,708,362,707,364,706,366,704,368,703,369,702,371,701,373,699,375,698,376,697,378,695,380,694,382,692,383,691,385,689,386,688,388,686,389,685,391,683,392,682,394,680,395,678,397,676,398,675,399,673,401,671,402,669,403,668,404,666,406,664,407,662,408,660,409,658,410,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderDetail.htm">
+      <area title="[Production].[TransactionHistory] (16%)" shape="rect" coords="362,560,591,574" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistory.htm">
+      <area title="[Production].[TransactionHistory] (16%)" shape="poly" coords="600,300,657,410,655,411,653,412,651,413,649,414,647,415,645,416,643,417,641,417,639,418,637,419,635,419,633,420,631,421,629,421,626,422,624,422,622,422,620,423,618,423,616,423,613,424,611,424,609,424,607,424,605,424,603,424,600,424,598,424,596,424,594,424,592,424,590,424,587,424,585,424,583,423,581,423,579,423,577,422,574,422,572,422,570,421,568,420,566,420,564,419,562,419,560,418,558,417,556,417,554,416,552,415,550,414,548,413,546,412,544,411,542,410,540,409,538,408,536,407,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistory.htm">
+      <area title="[Production].[TransactionHistoryArchive] (12%)" shape="rect" coords="177,410,446,425" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistoryArchive.htm">
+      <area title="[Production].[TransactionHistoryArchive] (12%)" shape="poly" coords="600,300,535,407,533,405,531,404,529,403,528,402,526,401,524,399,522,398,521,397,519,395,517,394,516,392,514,391,513,389,511,388,509,386,508,385,506,383,505,381,504,380,502,378,501,376,500,375,498,373,497,371,496,369,495,367,493,366,492,364,491,362,490,360,489,358,488,356,487,354,486,352,485,350,484,348,484,346,483,344,482,342,481,340,481,338,480,336,479,334,479,332,478,330,478,327,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionTransactionHistoryArchive.htm">
+      <area title="[Production].[WorkOrder] (10%)" shape="rect" coords="239,272,425,286" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrder.htm">
+      <area title="[Production].[WorkOrder] (10%)" shape="poly" coords="600,300,478,327,477,325,477,323,476,321,476,319,476,317,475,314,475,312,475,310,475,308,475,306,475,304,475,301,475,299,475,297,475,295,475,293,475,291,475,288,475,286,475,284,476,282,476,280,476,278,477,275,477,273,478,271,478,269,479,267,479,265,480,263,481,261,481,259,482,256,483,254,484,252,485,250,485,248,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrder.htm">
+      <area title="[Production].[WorkOrderRouting] (9%)" shape="rect" coords="234,160,455,174" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrderRouting.htm">
+      <area title="[Production].[WorkOrderRouting] (9%)" shape="poly" coords="600,300,486,248,487,246,488,244,489,242,490,240,491,238,492,236,493,234,494,232,495,230,497,229,498,227,499,225,500,223,502,222,503,220,505,218,506,217,507,215,509,213,510,212,512,210,514,209,515,207,517,206,518,204,520,203,522,202,524,200,525,199,527,198,529,196,531,195,532,194,534,193,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_ProductionWorkOrderRouting.htm">
+      <area title="[Sales].[SalesOrderHeader] (4%)" shape="rect" coords="323,82,513,97" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeader.htm">
+      <area title="[Sales].[SalesOrderHeader] (4%)" shape="poly" coords="600,300,535,192,537,191,539,190,541,189,543,188,545,187,547,186,549,185,551,184,553,183,555,183,557,182,559,181,561,180,563,180,565,179,568,179,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeader.htm">
+      <area title="[Sales].[SalesOrderHeaderSalesReason] (3%)" shape="rect" coords="308,42,567,56" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeaderSalesReason.htm">
+      <area title="[Sales].[SalesOrderHeaderSalesReason] (3%)" shape="poly" coords="600,300,568,179,570,178,572,178,574,177,577,177,579,176,581,176,583,176,585,175,587,175,590,175,592,175,594,175,596,175,598,175,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesSalesOrderHeaderSalesReason.htm">
+      <area title="[Person].[Contact] (2%)" shape="rect" coords="621,36,761,50" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonContact.htm">
+      <area title="[Person].[Contact] (2%)" shape="poly" coords="600,300,599,175,601,175,603,175,605,175,608,175,610,175,612,175,614,175,616,176,618,176,621,176,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonContact.htm">
+      <area title="[Person].[Address] (2%)" shape="rect" coords="661,61,802,75" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonAddress.htm">
+      <area title="[Person].[Address] (2%)" shape="poly" coords="600,300,621,176,623,177,625,177,628,178,630,178,632,179,634,179,636,180,638,181,640,181,642,182,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PersonAddress.htm">
+      <area title="[Sales].[CustomerAddress] (2%)" shape="rect" coords="693,89,880,103" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomerAddress.htm">
+      <area title="[Sales].[CustomerAddress] (2%)" shape="poly" coords="600,300,642,182,644,183,647,184,649,185,651,185,653,186,654,187,656,188,658,189,660,190,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomerAddress.htm">
+      <area title="[Sales].[Customer] (2%)" shape="rect" coords="719,119,862,133" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomer.htm">
+      <area title="[Sales].[Customer] (2%)" shape="poly" coords="600,300,662,191,664,192,666,194,668,195,669,196,671,197,673,198,675,200,676,201,678,202,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCustomer.htm">
+      <area title="[Sales].[ContactCreditCard] (2%)" shape="rect" coords="739,150,929,164" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesContactCreditCard.htm">
+      <area title="[Sales].[ContactCreditCard] (2%)" shape="poly" coords="600,300,680,204,681,205,683,206,685,208,686,209,688,211,689,213,691,214,692,216,694,217,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesContactCreditCard.htm">
+      <area title="[Sales].[CreditCard] (2%)" shape="rect" coords="753,180,902,195" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCreditCard.htm">
+      <area title="[Sales].[CreditCard] (2%)" shape="poly" coords="600,300,695,219,696,220,698,222,699,224,700,226,702,227,703,229,704,231,705,233,706,235,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCreditCard.htm">
+      <area title="[Sales].[Individual] (2%)" shape="rect" coords="764,211,908,225" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesIndividual.htm">
+      <area title="[Sales].[Individual] (2%)" shape="poly" coords="600,300,707,236,708,238,709,240,711,242,711,244,712,246,713,248,714,250,715,252,716,254,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesIndividual.htm">
+      <area title="[Sales].[CurrencyRate] (1%)" shape="rect" coords="770,236,934,251" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCurrencyRate.htm">
+      <area title="[Sales].[CurrencyRate] (1%)" shape="poly" coords="600,300,716,255,717,257,718,259,718,261,719,263,720,265,720,267,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_SalesCurrencyRate.htm">
+      <area title="[Purchasing].[PurchaseOrderDetail] (1%)" shape="rect" coords="772,254,1006,268" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingPurchaseOrderDetail.htm">
+      <area title="[Purchasing].[PurchaseOrderDetail] (1%)" shape="poly" coords="600,300,721,270,721,272,722,274,722,276,723,278,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/table_PurchasingPurchaseOrderDetail.htm">
+    </map>
+    <map name="Largestproceduresbycodelength">
+      <area title="[dbo].[uspGetBillOfMaterials] (16%)" shape="rect" coords="759,394,964,408" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspGetBillOfMaterials.htm">
+      <area title="[dbo].[uspGetBillOfMaterials] (16%)" shape="poly" coords="600,300,725,300,724,302,724,304,724,306,724,308,724,310,724,313,724,315,723,317,723,319,723,321,722,323,722,325,721,328,721,330,720,332,720,334,719,336,718,338,718,340,717,342,716,344,715,346,715,348,714,350,713,352,712,354,711,356,710,358,709,360,708,362,707,364,706,366,704,368,703,369,702,371,701,373,699,375,698,376,697,378,695,380,694,382,692,383,691,385,689,386,688,388,686,389,685,391,683,392,682,394,680,395,678,397,676,398,675,399,673,401,671,402,669,403,668,404,666,406,664,407,662,408,660,409,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspGetBillOfMaterials.htm">
+      <area title="[dbo].[uspLogError] (16%)" shape="rect" coords="443,562,597,577" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspLogError.htm">
+      <area title="[dbo].[uspLogError] (16%)" shape="poly" coords="600,300,660,409,658,410,656,411,654,412,652,413,650,414,648,415,646,415,644,416,642,417,640,418,638,418,636,419,634,420,632,420,630,421,627,421,625,422,623,422,621,423,619,423,617,423,615,424,612,424,610,424,608,424,606,424,604,424,601,424,599,424,597,424,595,424,593,424,591,424,588,424,586,424,584,424,582,423,580,423,578,423,575,422,573,422,571,421,569,421,567,420,565,420,563,419,561,418,559,418,557,417,554,416,552,415,550,414,548,414,546,413,544,412,543,411,541,410,539,409,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspLogError.htm">
+      <area title="[dbo].[uspGetWhereUsedProductID] (16%)" shape="rect" coords="196,395,440,409" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspGetWhereUsedProductID.htm">
+      <area title="[dbo].[uspGetWhereUsedProductID] (16%)" shape="poly" coords="600,300,537,408,535,407,534,406,532,405,530,403,528,402,526,401,525,400,523,398,521,397,519,395,518,394,516,393,514,391,513,390,511,388,510,387,508,385,507,383,505,382,504,380,503,378,501,377,500,375,499,373,497,371,496,370,495,368,494,366,493,364,491,362,490,360,489,358,488,357,487,355,486,353,485,351,485,349,484,347,483,345,482,343,481,340,481,338,480,336,479,334,479,332,478,330,478,328,477,326,477,324,476,322,476,319,476,317,475,315,475,313,475,311,475,309,475,306,475,304,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspGetWhereUsedProductID.htm">
+      <area title="[dbo].[uspGetEmployeeManagers] (12%)" shape="rect" coords="198,225,432,239" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspGetEmployeeManagers.htm">
+      <area title="[dbo].[uspGetEmployeeManagers] (12%)" shape="poly" coords="600,300,475,304,475,302,475,299,475,297,475,295,475,293,475,291,475,288,475,286,475,284,476,282,476,280,476,278,477,275,477,273,478,271,478,269,479,267,479,265,480,263,481,261,481,259,482,257,483,255,484,253,485,251,485,249,486,247,487,245,488,243,489,241,490,239,491,237,492,235,494,233,495,231,496,229,497,228,498,226,500,224,501,222,502,221,504,219,505,217,507,216,508,214,510,213,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspGetEmployeeManagers.htm">
+      <area title="[dbo].[uspGetManagerEmployees] (12%)" shape="rect" coords="278,83,512,98" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspGetManagerEmployees.htm">
+      <area title="[dbo].[uspGetManagerEmployees] (12%)" shape="poly" coords="600,300,510,213,511,211,513,209,514,208,516,206,518,205,519,204,521,202,523,201,524,200,526,198,528,197,530,196,532,195,533,193,535,192,537,191,539,190,541,189,543,188,545,187,547,186,549,185,551,184,553,184,555,183,557,182,559,181,561,181,563,180,565,179,567,179,569,178,572,178,574,177,576,177,578,176,580,176,582,176,584,175,587,175,589,175,591,175,593,175,595,175,598,175,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspGetManagerEmployees.htm">
+      <area title="[HumanResources].[uspUpdateEmployeeHireInfo] (8%)" shape="rect" coords="664,64,977,78" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_HumanResourcesuspUpdateEmployeeHireInfo.htm">
+      <area title="[HumanResources].[uspUpdateEmployeeHireInfo] (8%)" shape="poly" coords="600,300,599,175,601,175,603,175,606,175,608,175,610,175,612,175,614,175,616,176,619,176,621,176,623,177,625,177,627,178,629,178,631,179,634,179,636,180,638,180,640,181,642,182,644,183,646,183,648,184,650,185,652,186,654,187,656,188,658,189,660,190,662,191,663,192,665,193,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_HumanResourcesuspUpdateEmployeeHireInfo.htm">
+      <area title="[dbo].[uspPrintError] (5%)" shape="rect" coords="734,142,888,157" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspPrintError.htm">
+      <area title="[dbo].[uspPrintError] (5%)" shape="poly" coords="600,300,666,194,668,195,670,196,672,197,673,199,675,200,677,201,678,203,680,204,682,205,683,207,685,208,687,210,688,211,690,213,691,215,693,216,694,218,696,219,697,221,698,223,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_dbouspPrintError.htm">
+      <area title="[HumanResources].[uspUpdateEmployeeLogin] (5%)" shape="rect" coords="762,204,1060,218" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_HumanResourcesuspUpdateEmployeeLogin.htm">
+      <area title="[HumanResources].[uspUpdateEmployeeLogin] (5%)" shape="poly" coords="600,300,699,224,700,226,702,227,703,229,704,231,705,233,706,235,708,237,709,239,710,240,711,242,712,244,713,246,714,248,714,250,715,252,716,254,717,256,718,258,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_HumanResourcesuspUpdateEmployeeLogin.htm">
+      <area title="[HumanResources].[uspUpdateEmployeePersonalInfo] (5%)" shape="rect" coords="773,262,1110,276" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_HumanResourcesuspUpdateEmployeePersonalInfo.htm">
+      <area title="[HumanResources].[uspUpdateEmployeePersonalInfo] (5%)" shape="poly" coords="600,300,718,260,719,262,719,264,720,267,721,269,721,271,722,273,722,275,722,277,723,279,723,281,723,284,724,286,724,288,724,290,724,292,724,295,724,297,724,299,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/sp_HumanResourcesuspUpdateEmployeePersonalInfo.htm">
+    </map>
+    <map name="Largestfunctionsbycodelength">
+      <area title="[dbo].[ufnGetContactInformation] (44%)" shape="rect" coords="643,540,875,555" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetContactInformation.htm">
+      <area title="[dbo].[ufnGetContactInformation] (44%)" shape="poly" coords="600,300,725,300,724,302,724,304,724,306,724,308,724,310,724,313,724,315,723,317,723,319,723,321,722,323,722,325,721,328,721,330,720,332,720,334,719,336,718,338,718,340,717,342,716,344,715,346,715,348,714,350,713,352,712,354,711,356,710,358,709,360,708,362,707,364,706,366,704,368,703,369,702,371,701,373,699,375,698,376,697,378,695,380,694,382,692,383,691,385,689,386,688,388,686,389,685,391,683,392,682,394,680,395,678,397,676,398,675,399,673,401,671,402,669,403,668,404,666,406,664,407,662,408,660,409,658,410,656,411,654,412,652,413,650,414,648,415,646,415,644,416,642,417,640,418,638,418,636,419,634,420,632,420,630,421,628,421,625,422,623,422,621,423,619,423,617,423,615,424,613,424,610,424,608,424,606,424,604,424,602,424,600,425,597,424,595,424,593,424,591,424,589,424,586,424,584,424,582,423,580,423,578,423,576,422,574,422,571,421,569,421,567,420,565,420,563,419,561,418,559,418,557,417,555,416,553,415,551,415,549,414,547,413,545,412,543,411,541,410,539,409,537,408,535,407,533,406,531,404,530,403,528,402,526,401,524,399,523,398,521,397,519,395,517,394,516,392,514,391,513,389,511,388,510,386,508,385,507,383,505,382,504,380,502,378,501,376,500,375,498,373,497,371,496,369,495,368,493,366,492,364,491,362,490,360,489,358,488,356,487,354,486,352,485,350,484,348,484,346,483,344,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetContactInformation.htm">
+      <area title="[dbo].[ufnGetProductDealerPrice] (9%)" shape="rect" coords="203,312,425,326" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetProductDealerPrice.htm">
+      <area title="[dbo].[ufnGetProductDealerPrice] (9%)" shape="poly" coords="600,300,482,343,482,341,481,339,480,337,480,335,479,333,478,331,478,329,477,327,477,324,477,322,476,320,476,318,476,316,475,314,475,311,475,309,475,307,475,305,475,303,475,301,475,298,475,296,475,294,475,292,475,290,475,288,475,285,476,283,476,281,476,279,477,277,477,275,477,272,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetProductDealerPrice.htm">
+      <area title="[dbo].[ufnGetProductStandardCost] (7%)" shape="rect" coords="202,208,436,222" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetProductStandardCost.htm">
+      <area title="[dbo].[ufnGetProductStandardCost] (7%)" shape="poly" coords="600,300,477,272,478,270,479,268,479,266,480,264,480,262,481,260,482,258,482,256,483,254,484,252,485,250,486,248,487,246,488,244,489,242,490,240,491,238,492,236,493,234,494,232,495,230,497,229,498,227,499,225,500,223,502,222,503,220,505,218,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetProductStandardCost.htm">
+      <area title="[dbo].[ufnGetProductListPrice] (6%)" shape="rect" coords="271,124,476,139" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetProductListPrice.htm">
+      <area title="[dbo].[ufnGetProductListPrice] (6%)" shape="poly" coords="600,300,505,218,506,216,508,215,509,213,511,212,512,210,514,209,515,207,517,206,519,204,520,203,522,201,524,200,526,199,527,197,529,196,531,195,533,194,535,193,536,192,538,190,540,189,542,188,544,187,546,186,548,186,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetProductListPrice.htm">
+      <area title="[dbo].[ufnGetSalesOrderStatusText] (6%)" shape="rect" coords="311,53,549,67" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetSalesOrderStatusText.htm">
+      <area title="[dbo].[ufnGetSalesOrderStatusText] (6%)" shape="poly" coords="600,300,548,185,550,185,552,184,554,183,556,182,558,181,560,181,563,180,565,179,567,179,569,178,571,178,573,177,575,177,577,176,579,176,582,176,584,175,586,175,588,175,590,175,593,175,595,175,597,175,599,175,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetSalesOrderStatusText.htm">
+      <area title="[dbo].[ufnGetPurchaseOrderStatusText] (5%)" shape="rect" coords="645,50,903,64" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetPurchaseOrderStatusText.htm">
+      <area title="[dbo].[ufnGetPurchaseOrderStatusText] (5%)" shape="poly" coords="600,300,600,175,602,175,604,175,606,175,609,175,611,175,613,175,615,175,617,176,619,176,622,176,624,177,626,177,628,178,630,178,632,179,634,179,636,180,638,181,641,181,643,182,645,183,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetPurchaseOrderStatusText.htm">
+      <area title="[dbo].[ufnGetStock] (5%)" shape="rect" coords="711,109,860,123" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetStock.htm">
+      <area title="[dbo].[ufnGetStock] (5%)" shape="poly" coords="600,300,645,183,647,184,649,185,651,186,653,186,655,187,657,188,659,189,661,190,663,192,664,193,666,194,668,195,670,196,672,197,673,199,675,200,677,201,679,203,680,204,682,206,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetStock.htm">
+      <area title="[dbo].[ufnGetDocumentStatusText] (5%)" shape="rect" coords="750,173,984,187" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetDocumentStatusText.htm">
+      <area title="[dbo].[ufnGetDocumentStatusText] (5%)" shape="poly" coords="600,300,684,207,685,208,687,210,688,211,690,213,691,215,693,216,694,218,696,220,697,221,698,223,700,225,701,226,702,228,703,230,705,232,706,234,707,236,708,237,709,239,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetDocumentStatusText.htm">
+      <area title="[dbo].[ufnLeadingZeros] (4%)" shape="rect" coords="768,226,940,240" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnLeadingZeros.htm">
+      <area title="[dbo].[ufnLeadingZeros] (4%)" shape="poly" coords="600,300,710,241,711,243,712,245,713,247,714,249,715,251,716,253,716,255,717,257,718,259,718,261,719,263,720,265,720,267,721,270,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnLeadingZeros.htm">
+      <area title="[dbo].[ufnGetAccountingEndDate] (2%)" shape="rect" coords="773,260,998,274" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetAccountingEndDate.htm">
+      <area title="[dbo].[ufnGetAccountingEndDate] (2%)" shape="poly" coords="600,300,721,271,722,273,722,275,722,277,723,279,723,281,723,283,724,286,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetAccountingEndDate.htm">
+      <area title="[dbo].[ufnGetAccountingStartDate] (1%)" shape="rect" coords="774,280,1006,294" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetAccountingStartDate.htm">
+      <area title="[dbo].[ufnGetAccountingStartDate] (1%)" shape="poly" coords="600,300,724,286,724,288,724,290,724,293,724,295,724,297,724,299,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/udf_dboufnGetAccountingStartDate.htm">
+    </map>
+    <map name="Largestviewsbycodelength">
+      <area title="[Production].[vProductModelCatalogDescription] (18%)" shape="rect" coords="756,401,1066,416" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_ProductionvProductModelCatalogDescription.htm">
+      <area title="[Production].[vProductModelCatalogDescription] (18%)" shape="poly" coords="600,300,725,300,724,302,724,304,724,306,724,308,724,310,724,313,724,315,723,317,723,319,723,321,722,323,722,325,721,328,721,330,720,332,720,334,719,336,718,338,718,340,717,342,716,344,715,346,715,348,714,350,713,352,712,354,711,356,710,358,709,360,708,362,707,364,706,366,704,368,703,369,702,371,701,373,699,375,698,376,697,378,695,380,694,382,692,383,691,385,689,386,688,388,686,389,685,391,683,392,682,394,680,395,678,397,676,398,675,399,673,401,671,402,669,403,668,404,666,406,664,407,662,408,660,409,658,410,656,411,654,412,652,413,650,414,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_ProductionvProductModelCatalogDescription.htm">
+      <area title="[Person].[vAdditionalContactInfo] (12%)" shape="rect" coords="610,559,840,573" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_PersonvAdditionalContactInfo.htm">
+      <area title="[Person].[vAdditionalContactInfo] (12%)" shape="poly" coords="600,300,650,414,648,415,646,415,644,416,642,417,640,418,638,418,636,419,634,420,632,420,630,421,627,421,625,422,623,422,621,423,619,423,617,423,615,424,612,424,610,424,608,424,606,424,604,424,601,424,599,424,597,424,595,424,593,424,591,424,588,424,586,424,584,424,582,423,580,423,578,423,575,422,573,422,571,421,569,421,567,420,565,420,563,419,561,418,559,418,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_PersonvAdditionalContactInfo.htm">
+      <area title="[Sales].[vStoreWithDemographics] (10%)" shape="rect" coords="238,463,475,477" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_SalesvStoreWithDemographics.htm">
+      <area title="[Sales].[vStoreWithDemographics] (10%)" shape="poly" coords="600,300,558,417,556,417,554,416,552,415,550,414,548,413,546,412,544,412,542,411,540,410,538,408,536,407,534,406,533,405,531,404,529,403,527,401,525,400,524,399,522,398,520,396,519,395,517,393,515,392,514,390,512,389,511,387,509,386,508,384,506,383,505,381,503,379,502,378,501,376,499,374,498,372,497,371,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_SalesvStoreWithDemographics.htm">
+      <area title="[HumanResources].[vJobCandidate] (8%)" shape="rect" coords="194,357,430,371" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvJobCandidate.htm">
+      <area title="[HumanResources].[vJobCandidate] (8%)" shape="poly" coords="600,300,497,370,495,369,494,367,493,365,492,363,491,361,490,359,489,357,488,355,487,353,486,351,485,349,484,347,483,345,482,343,482,341,481,339,480,337,480,335,479,333,479,331,478,329,477,327,477,325,477,322,476,320,476,318,476,316,475,314,475,312,475,309,475,307,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvJobCandidate.htm">
+      <area title="[Sales].[vIndividualDemographics] (8%)" shape="rect" coords="198,249,427,264" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_SalesvIndividualDemographics.htm">
+      <area title="[Sales].[vIndividualDemographics] (8%)" shape="poly" coords="600,300,475,305,475,303,475,301,475,299,475,297,475,294,475,292,475,290,475,288,475,286,476,284,476,281,476,279,477,277,477,275,477,273,478,271,478,269,479,267,480,264,480,262,481,260,482,258,482,256,483,254,484,252,485,250,486,248,486,246,487,244,488,242,489,240,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_SalesvIndividualDemographics.htm">
+      <area title="[HumanResources].[vJobCandidateEducation] (8%)" shape="rect" coords="168,154,458,168" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvJobCandidateEducation.htm">
+      <area title="[HumanResources].[vJobCandidateEducation] (8%)" shape="poly" coords="600,300,490,239,491,237,492,235,493,233,495,231,496,230,497,228,498,226,500,224,501,223,502,221,504,219,505,218,507,216,508,214,510,213,511,211,513,210,514,208,516,207,517,205,519,204,521,202,523,201,524,200,526,198,528,197,530,196,531,195,533,194,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvJobCandidateEducation.htm">
+      <area title="[HumanResources].[vJobCandidateEmployment] (7%)" shape="rect" coords="221,70,527,84" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvJobCandidateEmployment.htm">
+      <area title="[HumanResources].[vJobCandidateEmployment] (7%)" shape="poly" coords="600,300,534,193,536,192,538,191,540,190,542,189,544,188,546,187,548,186,550,185,552,184,554,183,556,182,558,182,560,181,562,180,564,180,566,179,568,178,570,178,572,177,575,177,577,177,579,176,581,176,583,176,585,175,587,175,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvJobCandidateEmployment.htm">
+      <area title="[Production].[vProductModelInstructions] (3%)" shape="rect" coords="606,29,871,43" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_ProductionvProductModelInstructions.htm">
+      <area title="[Production].[vProductModelInstructions] (3%)" shape="poly" coords="600,300,588,175,590,175,593,175,595,175,597,175,599,175,601,175,603,175,606,175,608,175,610,175,612,175,614,175,616,176,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_ProductionvProductModelInstructions.htm">
+      <area title="[Sales].[vSalesPerson] (3%)" shape="rect" coords="658,59,821,73" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_SalesvSalesPerson.htm">
+      <area title="[Sales].[vSalesPerson] (3%)" shape="poly" coords="600,300,617,176,619,176,621,176,623,177,626,177,628,178,630,178,632,179,634,179,636,180,638,181,640,181,642,182,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_SalesvSalesPerson.htm">
+      <area title="[Sales].[vIndividualCustomer] (3%)" shape="rect" coords="697,93,901,108" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_SalesvIndividualCustomer.htm">
+      <area title="[Sales].[vIndividualCustomer] (3%)" shape="poly" coords="600,300,643,182,645,183,647,184,649,185,651,186,653,187,655,188,657,189,659,190,661,191,663,192,665,193,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_SalesvIndividualCustomer.htm">
+      <area title="[Purchasing].[vVendor] (3%)" shape="rect" coords="726,128,891,143" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_PurchasingvVendor.htm">
+      <area title="[Purchasing].[vVendor] (3%)" shape="poly" coords="600,300,667,194,668,195,670,196,672,198,674,199,676,200,677,202,679,203,681,204,682,206,684,207,685,209,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_PurchasingvVendor.htm">
+      <area title="[Sales].[vSalesPersonSalesByFiscalYears] (2%)" shape="rect" coords="745,162,1012,177" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_SalesvSalesPersonSalesByFiscalYears.htm">
+      <area title="[Sales].[vSalesPersonSalesByFiscalYears] (2%)" shape="poly" coords="600,300,686,209,687,210,689,212,690,214,692,215,693,217,695,218,696,220,697,222,699,223,700,225,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_SalesvSalesPersonSalesByFiscalYears.htm">
+      <area title="[HumanResources].[vEmployee] (2%)" shape="rect" coords="759,194,975,209" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvEmployee.htm">
+      <area title="[HumanResources].[vEmployee] (2%)" shape="poly" coords="600,300,701,226,702,228,703,230,705,232,706,234,707,236,708,237,709,239,710,241,711,243,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvEmployee.htm">
+      <area title="[HumanResources].[vEmployeeDepartmentHistory] (2%)" shape="rect" coords="766,221,1088,235" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvEmployeeDepartmentHistory.htm">
+      <area title="[HumanResources].[vEmployeeDepartmentHistory] (2%)" shape="poly" coords="600,300,712,245,713,247,714,249,715,251,715,253,716,255,717,257,718,259,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvEmployeeDepartmentHistory.htm">
+      <area title="[HumanResources].[vEmployeeDepartment] (1%)" shape="rect" coords="771,243,1053,258" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvEmployeeDepartment.htm">
+      <area title="[HumanResources].[vEmployeeDepartment] (1%)" shape="poly" coords="600,300,718,259,719,262,719,264,720,266,720,268,721,270,721,272,722,274,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_HumanResourcesvEmployeeDepartment.htm">
+      <area title="[Production].[vProductAndDescription] (1%)" shape="rect" coords="773,265,1024,279" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_ProductionvProductAndDescription.htm">
+      <area title="[Production].[vProductAndDescription] (1%)" shape="poly" coords="600,300,722,274,722,277,723,279,723,281,723,283,724,285,724,287,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_ProductionvProductAndDescription.htm">
+      <area title="[Person].[vStateProvinceCountryRegion] (1%)" shape="rect" coords="774,282,1036,297" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_PersonvStateProvinceCountryRegion.htm">
+      <area title="[Person].[vStateProvinceCountryRegion] (1%)" shape="poly" coords="600,300,724,289,724,292,724,294,724,296,724,298,600,300" href="http://elsasoft.com/samples/sqlserver_adventureworks/sqlserver.spring.katmai.adventureworks/view_PersonvStateProvinceCountryRegion.htm">
+    </map>
+  
+</body></html>

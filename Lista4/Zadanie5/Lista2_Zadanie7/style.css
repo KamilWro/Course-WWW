@@ -1,0 +1,18 @@
+	p.class{
+		color: blue;	
+	}
+	p#id{
+		color: green;
+	}
+	p>q{
+		color: yellow;
+	}
+	p+i{
+		color: red;
+	}
+	p{
+		font-size:25px; 		
+	}
+	p b{
+		color: gray;
+	}	

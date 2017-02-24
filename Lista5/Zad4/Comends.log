@@ -1,0 +1,22 @@
+document.body.innerHTML+='<div id="sidebar"></div>'
+
+document.body.innerHTML='<div id="menu"></div>'+document.body.innerHTML
+document.body
+document.getElementById('sidebar').style.border="1px solid green"
+document.getElementById('content').style.border="1px solid yellow"
+document.getElementById('menu').style.border="1px solid blue"
+
+function f(x){
+document.getElementById('content').innerHTML='<div id="picture"></div>';
+document.getElementById('picture').style.backgroundColor=x;
+document.getElementById('picture').style.width="100px";
+document.getElementById('picture').style.height="100px";
+document.getElementById('sidebar').innerHTML='</br>'+x+document.getElementById('sidebar').innerHTML;
+}
+
+document.getElementById('menu').innerHTML+='</br> <a href="#" onclick="f(`red`)">red</a>'
+document.getElementById('menu').innerHTML+='</br> <a href="#" onclick="f(`black`)">black</a>'
+document.getElementById('menu').innerHTML+='</br> <a href="#" onclick="f(`brown`)">brown</a>'
+
+
+

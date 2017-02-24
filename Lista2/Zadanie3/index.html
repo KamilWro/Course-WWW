@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obrazek svg</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="450px">
+    
+    <!--Publisher -->
+	<rect id="Publisher" x="20" y="160" width="156" height="56" style="stroke: #6699ff; stroke-width: 3px; fill: #cce6ff" />
+	<text id="txt_Publisher" x="60" y="195"  style="font-family: Arial; font-size: 20px; fill:black">Publisher</text>
+
+    <!-- Subscribers -->	
+	<rect id="Sub1" x="640" y="80"  style="stroke: #6699ff; stroke-width: 3px; fill: #cce6ff" width="156" height="56" />
+	<text id="txt_Sub1" x="660" y="115" style="font-family: Arial; font-size: 20px; fill: black">Subscriber 1</text>
+	
+	<rect id="Sub2" x="640" y="160"  style="stroke: #6699ff; stroke-width: 3px; fill: #cce6ff" width="156" height="56" />
+	<text id="txt_Sub2" x="660" y="195"  style="font-family: Arial; font-size: 20px; fill:black">Subscriber 2</text>
+	
+	<rect id="Sub3"  x="640" y="240"  style="stroke: #6699ff; stroke-width: 3px; fill: #cce6ff" width="156" height="56" />
+	<text id="txt_Sub3" x="660" y="275"  style="font-family: Arial; font-size: 20px; fill:black">Subscriber 3</text>
+
+    <!-- Topics -->
+	<rect id="TopicA" x="330" y="100" rx="20" ry="20"  stroke="#6b6b47" width="150" height="70" stroke-width="3px" opacity=" 0.7"  fill="#ccccb3"   />
+	<text id="txt_TopicA" x="370" y="145"  fill="black" font-size="20" font-family="Arial"> Topic A </text>
+    
+	<ellipse id="TopicB" cx="405" cy="240" stroke="#0055ff" style="stroke-width: 3px;" rx="75" ry="40" fill="#6699ff"/>	
+    	<text id="txt_TopicB" x="370" y="245" fill="black" font-size="20" font-family="Arial"> Topic B </text>
+
+    <!-- Title -->
+    	<text id="Title" x="320" y="420" fill="black" font-size="12" font-family="Arial"> Communication Infrastructure </text>
+	
+    <!-- lines from cyllinders -->
+    	<line x1="250" y1="190" x2="325" y2="140" style="stroke:black; stroke-width:3" />
+    	<line x1="250" y1="190" x2="325" y2="240" style="stroke:black; stroke-width:3" />
+	
+	<!-- top -->
+    	<line x1="600" y1="110" x2="635" y2="110" style="stroke:black; stroke-width:3" />
+	<!-- middle -->
+	<line x1="600" y1="190" x2="635" y2="190" style="stroke:black; stroke-width:3" />
+    	<!-- bottom -->
+	<line x1="600" y1="270" x2="635" y2="270" style="stroke:black; stroke-width:3" />
+
+    <!--cyllinders -->
+	<ellipse cx="250" cy="190" rx="10" ry="15" style="fill:#4d94ff;stroke:#2d6bc9;stroke-width:3" />
+	<rect x="210" y="175" height="30" width="40" style="fill:#4d94ff" />
+    	<ellipse cx="210" cy="190" rx="10" ry="15" style="fill:#4d94ff;stroke:#2d6bc9;stroke-width:3" />
+    	<line x1="210" y1="205" x2="250" y2="205" style="stroke:#2d6bc9;stroke-width:3" />
+    	<line x1="210" y1="175" x2="250" y2="175" style="stroke:#2d6bc9;stroke-width:3" />
+
+    	<!-- top -->
+    	<ellipse cx="600" cy="110" rx="10" ry="15" style="fill:#4d94ff;stroke:#2d6bc9;stroke-width:3" />
+    	<rect x="560" y="95" height="30" width="40" style="fill:#4d94ff" />
+    	<ellipse cx="560" cy="110" rx="10" ry="15" style="fill:#4d94ff;stroke:#2d6bc9;stroke-width:3" />
+    	<line x1="560" y1="125" x2="600" y2="125" style="stroke:#2d6bc9;stroke-width:3" />
+    	<line x1="560" y1="95" x2="600" y2="95" style="stroke:#2d6bc9;stroke-width:3" />
+    	<!-- middle -->
+    	<ellipse cx="600" cy="190" rx="10" ry="15" style="fill:#4d94ff;stroke:#2d6bc9;stroke-width:3" />
+    	<rect x="560" y="175" height="30" width="40" style="fill:#4d94ff" />
+    	<ellipse cx="560" cy="190" rx="10" ry="15" style="fill:#4d94ff;stroke:#2d6bc9;stroke-width:3" />
+    	<line x1="560" y1="205" x2="600" y2="205" style="stroke:#2d6bc9;stroke-width:3" />
+    	<line x1="560" y1="175" x2="600" y2="175" style="stroke:#2d6bc9;stroke-width:3" />
+    	<!-- bottom -->
+    	<ellipse cx="600" cy="270" rx="10" ry="15" style="fill:#4d94ff;stroke:#2d6bc9;stroke-width:3" />
+    	<rect x="560" y="255" height="30" width="40" style="fill:#4d94ff" />
+    	<ellipse cx="560" cy="270" rx="10" ry="15" style="fill:#4d94ff;stroke:#2d6bc9;stroke-width:3" />
+    	<line x1="560" y1="285" x2="600" y2="285" style="stroke:#2d6bc9;stroke-width:3" />
+    	<line x1="560" y1="255" x2="600" y2="255" style="stroke:#2d6bc9;stroke-width:3" />
+
+    <!-- lines to cyllinders -->
+	<line x1="175" y1="190" x2="210" y2="190" style="stroke:black; stroke-width:3" />
+	<polyline stroke="black" id="Polyline" style="fill: none; stroke-width: 3px;" points="560,110 480,135 560,190 480,240 560,270"/>
+	
+    <!--arrows -->
+    	<polygon points="307,142 316,156 330,139" style="fill: black; stroke-width: 0;" />
+    	<polygon points="305,240 315,223 330,243" style="fill: black; stroke-width: 0;" />
+
+    	<polygon points="630,120 630,100 640,110" style="fill: black; stroke-width: 0;" />
+    	<polygon points="630,200 630,180 640,190" style="fill: black; stroke-width: 0;" />
+    	<polygon points="630,280 630,260 640,270" style="fill: black; stroke-width: 0;" />
+
+    <!-- Circle -->
+    	<circle id="Circle" cx="400" cy="200" r="180" fill="none" stroke="grey" stroke-width="1px" stroke-dasharray="5px, 5px" />
+
+
+
+
+</svg>
+</body>
+</html>

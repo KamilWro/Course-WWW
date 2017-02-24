@@ -1,0 +1,29 @@
+	div.ver {
+        	margin-top:  150px;
+        	margin-bottom: 150px;
+		padding-top: 60px;
+		padding-bottom: 60px;		
+        	border:2px solid black;
+        }
+
+        span.ver {
+        	border:2px solid red; 
+        	display:table-cell;
+        	vertical-align:middle;  
+  		height: 300px;
+        }
+
+        div.hor {
+		width: 50%;
+        	margin-left:  auto;
+        	margin-right: auto;
+        	border:2px solid black;
+        	text-align: center;
+        }
+
+        span.hor {
+		border:2px solid red;
+        	text-align: center;
+        	display:block;
+        }
+

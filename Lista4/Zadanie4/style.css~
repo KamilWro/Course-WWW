@@ -1,0 +1,284 @@
+/* inline */
+
+h1 { 
+	margin-top: 70px; 
+	margin-left: 20px; 	
+	float: left;
+	font-size: 50px;
+	white-space: nowrap;
+	box-reflect: below 5px linear-gradient(top,
+                                              transparent 0%,
+                                              rgba(255,255,255,0.2) 50%,
+                                              rgba(255,255,255,0.6) 80%,
+                                              transparent 100%);
+
+        /* zapis dla przeglądarki Google Chrome, Safari, Opera */
+        -webkit-box-reflect: below 5px -webkit-linear-gradient(top,
+                                                              transparent 0%,
+                                                              rgba(255,255,255,0.2) 50%,
+                                                              rgba(255,255,255,0.6) 80%,
+                                                              transparent 100%);
+	}
+
+
+h2 { 
+	margin-top: 200px;  
+	float: right;
+	white-space: nowrap;
+	color: #0033CC;
+	text-shadow: 2px 2px 5px #000000;
+	}
+
+.page-wrapper h3 { 
+	font: 600 18pt "trebuchet ms"; 
+	color: #000000;
+	text-decoration: none;
+	text-align: left;
+	margin: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	letter-spacing: .5px;
+	height: 40px;
+	text-indent: 5px;
+}
+
+.sidebar h3{ 
+	padding: 5px 0px 5px 0px;
+	font-size:17px;
+	line-height: 1.8ex;
+	text-align: center;
+	color:#000000;
+}
+
+.page-wrapper p { 
+	font: 8pt/14pt georgia; 
+	margin-top: 0px; 
+	text-align: justify;
+	padding-right: 5px;
+	text-indent: 10px;
+}
+
+.summary p {
+	font-size: 10px;
+	line-height: 11px;
+	text-align: center;
+}
+
+
+
+.sidebar ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.sidebar li, .sidebar .wrapper li {
+
+	background-color: #345082 ; 
+	display: block;
+	border-bottom: 2px #000000 dotted;
+	padding: 0px 0px 0px 5px;
+	width: 128px;
+	line-height: 1.8ex;
+	border-top: 2px dotted #000000;
+	margin-bottom: 2px;
+	color: #172104;
+	text-align: left;
+}
+
+.sidebar li:hover, .sidebar .wrapper li:hover  {
+
+	background-color: #668fd1; 
+	margin: 0px 0px 2px 5px;
+	color: #263B5F;
+}
+
+
+.sidebar li a:link { 
+	display: block;
+	color: #000000;
+	text-align: right;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+
+.sidebar li a:link:hover { 
+
+	color: #fff4ee;
+	text-decoration: none;
+}
+
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #dfce3b;
+	}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #2262a4;
+	}
+
+a:hover, a:active { 
+
+	text-decoration: none; 
+	color: #ffffff;
+	background: #668fd1;
+}
+
+
+
+/* Bloki */
+html{
+	background-color: #FFFFFF;
+	filter: grayscale(100%);
+}
+html:hover{
+	filter: none;
+	background: linear-gradient( #FFFFFF -20%, #89b6f9 80%)!;
+}
+
+body { 
+	font: 8pt georgia; 
+	color: #172104; 
+	margin: 0px;
+	position: relative;
+	width: 650px;
+	top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body:hover{
+	filter: none;
+	
+}
+
+
+
+
+
+
+/* Podzialy strony */
+
+
+.page-wrapper { 
+
+	background-color: #F2F2F2;
+	border-right: 6px solid #000066; 
+	border-left: 6px solid #000066; 
+	position: absolute;
+	width: 680px;
+}
+
+
+
+.intro { 
+	min-width: 470px;
+}
+
+header { 
+	margin-bottom: 20px;
+	height: 300px;
+}
+
+
+
+
+
+.summary { 
+	margin: 0px 20px 20px 10px;
+	width: 650px;
+	font-size: 10px;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	color: #fffdfa;
+	background: #E0E000;
+	border-bottom-left-radius:25px 25px;
+	border-bottom-right-radius:25px 25px;
+}
+
+
+.requirements, .benefits, .participation, .supporting, .preamble {
+	margin-bottom: 20px;
+}
+
+
+.preamble {
+	padding: 0px 30px 0px 30px;
+}
+
+.supporting {
+	padding-left: 30px; 
+	margin-bottom: 40px;
+	padding-right: 30px;
+}
+
+
+
+footer { 
+	text-align: center;
+	height: 10px;
+	bottom: 0px;
+	padding-bottom: 0px;
+	width: 500px;
+	font-size: 1.5em;
+	padding-left: 0px;
+	margin: 50px 60px 0px 0px;
+}
+
+
+
+.sidebar { 
+        position:fixed;
+	top: 0px;
+}
+
+.sidebar .wrapper { 
+	background-color:#FDD700;
+	font-weight:bold;
+	font-family: verdana, sans-serif;
+	width:140px;
+        position:fixed;
+        left:-130px;
+        transition:1s;
+        -webkit-transition:1s;
+        border-bottom-right-radius:6px;
+        border-right:3px solid #000;
+	border-bottom:3px solid #000;	
+	opacity:0.5;
+}
+.sidebar .wrapper:hover { 
+	left:0;
+	cursor:pointer;
+	opacity:1;
+}
+
+
+
+
+@media print {
+ 
+  	*, header h2{
+	    	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+   		color: black;
+    		background:none;
+    		text-shadow:none;
+	}
+
+ 	aside, footer, .summary{
+    		display:none;
+  	}
+  	h1, h2, h3 {
+       	 	page-break-after: avoid;
+    	}
+ 	a[href]:after {
+        	content: " (" attr(href) ")";
+    	}
+}
+

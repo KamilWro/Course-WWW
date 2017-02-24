@@ -1,0 +1,37 @@
+// Używanie Zmiennych dla powtarzajacych sie wartosci
+@color0: #d9d9d9; 
+@width0: 250px; 
+@height0: 300px; 
+
+.photo {
+	position: relative;
+	&:hover { // Less pozwala takze na zagniezdzanie regul -> & oznacza rodzica - w tym przypadku: a
+		.back {
+			filter: blur(4px) brightness(0.5);
+		}
+		.top {
+			color: @color0;
+			font-size: 30px;
+			font-weight:900;
+			opacity: 1;
+			text-shadow:1px 1px 5px black;
+		}
+	}
+}
+.back {
+	position: absolute;
+	z-index:-1;
+}
+.top {
+	opacity: 0;
+	position: absolute;
+	text-align:center;
+	top:100px;
+	width:@width0;
+}
+img {
+	border: 2;
+	height: @height0;
+	width: @width0;
+}
+

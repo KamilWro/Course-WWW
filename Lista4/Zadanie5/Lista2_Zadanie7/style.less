@@ -1,0 +1,25 @@
+//Operator arytmetyczny i funkcja zwracjaca wartosc
+
+.sum(@a, @b) {
+  @c: @a + @b;
+}
+
+	p.class{
+		color: blue;	
+	}
+	p#id{
+		color: green;
+	}
+	p>q{
+		color: yellow;
+	}
+	p+i{
+		color: red;
+	}
+	p{ //Less pozwala zagnieżdżać reguły CSS
+		.sum(15px, 10px);
+  		font-size: @c;		
+	 	b{
+			color: gray;
+		}
+	}	

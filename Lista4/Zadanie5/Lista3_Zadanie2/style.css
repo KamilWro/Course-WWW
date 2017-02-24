@@ -1,0 +1,8 @@
+a:link { color: blue; } /* Standardowy link*/
+a:visited {color: yellow;} /* Link odwiedzony*/
+a:hover {color: green; font-size: 25px; } /* Wskazanie mysza */
+a:active {font-weight:bolder} /* Link aktywny przy wcisnieciu*/
+a:focus {color: red} /* Wskazane pole */
+
+
+

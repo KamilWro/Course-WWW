@@ -1,0 +1,72 @@
+li {
+	display:inline;
+}
+
+
+.container {
+    	display: flex; 
+	flex-direction: column; 
+	background-color: #F2F2F2; 	
+}
+
+.container > header {
+	display: flex;
+	flex-direction: column;
+    	order: 0; 
+	flex: 2 1 auto;
+}
+
+	.container > header > .title {
+	    	display: flex; 
+		flex: 3 1 auto;
+		flex-direction: row; 
+	}
+			.container > header  nav.logo {
+	    			order: 0; 
+	    			align-self: stretch; 
+				background-color: #B3B3FF;	
+				flex: 0 1 auto;
+	   		 }
+			.container > header  nav.banner {
+	    			order: 1;  
+	    			align-self: stretch;  
+				background-color: #6666FF;
+				flex: 2 1 auto;	
+	    		}
+
+	.container > header > nav.menu {
+			display: flex; 
+	    		order: 0;
+	    		flex: 1 1 auto;
+			background-color: #FFCCCC;	
+	}
+
+.container > .main  {
+	display: flex;
+	flex-direction: row;
+    	order: 1;
+    	flex: 6 1 auto;	
+}
+
+		.container > .main aside {
+	    		order: 0;
+	    		flex: 0 1 20%; /* gdy jest na auto to rozciaga sie */
+	    		align-self: stretch;
+			background-color: #9933FF;	
+		}
+
+		.container > .main main {
+    			order: 1;
+    			flex: 3 1 auto;
+    			align-self: stretch;
+		}
+
+.container > footer  {
+   	order: 2;
+    	flex: 1 1 auto;
+    	align-self: stretch;
+	background-color: #99FF99;	
+}
+
+
+

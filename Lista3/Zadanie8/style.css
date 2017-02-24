@@ -1,0 +1,9 @@
+ul#one {
+	list-style-image: url(./kropa.png);
+}
+
+ul#two{
+	background-image: url(./kropa.png);
+	background-repeat: repeat-y;
+
+}
