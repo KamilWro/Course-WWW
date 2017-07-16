@@ -1,11 +1,9 @@
 "use strict";
-window.onload = function load()
-{
+window.onload = function load(){
 	document.getElementById('form').onsubmit = checkForm;
 } 
 
-function checkForm()
-{
+function checkForm(){
 	// Używanie zmiennej bez jej wcześniejszego zadeklarowania.
         error = false;
         if (!peselCheck()){
@@ -28,7 +26,7 @@ function peselCheck() {
          	public.style.border = "1px solid #00E600";
          	//Usuwanie zmiennej, funkcji lub argumentu.
          	delete public;
-        }
+}
 
 /*
 -> Po pierwsze, eliminuje niektóre „pułapki” starszych wersji języka – uniemożliwia stosowanie niewłaściwych konstrukcji, które do tej pory nie kończyły się jednak błędem. 

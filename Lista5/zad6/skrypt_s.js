@@ -10,32 +10,26 @@ function* prime(){
     }
 }
 
-
-function next( value )
-{
+function next( value ){
     var now = value +1;
     while ( ! checkPrime (now) ) {
         now += 1;
     }
     return now;
 }
+
 function checkPrime(value){
 
-    if(value < 2)
-    {
+    if(value < 2){
         return false;
     }
 
     for (i = 2; i * i <= value; i++) {
-
         if (value% i == 0) {
-
             return false;
         }
     }
     return true;
-
-
 }
 
 var value=0;
